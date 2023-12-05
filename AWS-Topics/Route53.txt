@@ -1,0 +1,9 @@
+# What is Route53
+-> Route53 is a scalable and highly available domain name system (DNS) service provided by AWS.
+-> It helps route traffic to appropriate resources , such as website or application, based on domain named enter by user.
+-> It also supports the advanced DNS features like healthe checks and routing policies.
+
+# Features of Route53
+-> Domain registration -> [when we do the domain registration it will provide the 4 naming servers]
+-> DNS operation -> [If you want mapping the Ip address to Domain registration then you will use DNS operation]
+
