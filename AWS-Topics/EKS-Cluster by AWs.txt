@@ -103,7 +103,7 @@ If we want to use Ingress first we need to setup Ingress in our system
 -> kubectl get all --> To see the data 
 
 # What will you do after deployment
--> After creating the Loadbalancer you have to route53 and click domain name and create the record and select alias
+-> After creating the Loadbalancer you have to go route53 and click domain name and create the record and select alias
 -> select the "Alias to application and classic load balancer" and select the region and select the load balancer and create the record
 -> After complete the above step. you need to create one ingress role file to set the paths to pods [In file]
 -> After deploy the paths you will go to browser then write domain name and pathname [ashokit.org/java-web-app]
