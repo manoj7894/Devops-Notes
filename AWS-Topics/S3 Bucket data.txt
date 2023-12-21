@@ -45,6 +45,7 @@ Note: "ACL permission will work up to object level"
 
 # What MFA [mulitfactor authentication]
 -> It is a protector but we cant enable the MFA by console. you can enable by AWSCLI and AWS SDK
+-> It is additonal layer of security of your s3 bucket.
 
 # What is Suspended
 When you enable suspended files will not delete but when do you versioning next it couldnt apply versioning to
