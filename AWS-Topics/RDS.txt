@@ -256,14 +256,14 @@ FLUSH PRIVILEGES;
 
 
 # How to take the RDS snap chat backup
--> After create the RDS you will click that database and go to actions and create snapchat  [before delete the database you will databse username and passwd]
+-> After create the RDS you will click that database and go to actions and create snapchat  [before delete the database you will remember database username and passwd]
 -> After delete the database and go to snapchat and retrive snapchat and restore
 -> After restore the RDS log in below command and check the data
 -> mysql -h <endpoint> -u <dbusername> -P <portnumber> -p<dbpasswd>
 
 
 # How to retrive data from RDS to S3
--> Click on RDS and go to acctions and click retrive s3 and give bucket name and create one iam role there and click one KMS key and create
+-> Click on RDS and go to actions and click retrive s3 and give bucket name and create one iam role there and click one KMS key and create
 
 
 
