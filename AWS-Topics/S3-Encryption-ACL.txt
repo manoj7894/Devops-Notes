@@ -1,0 +1,47 @@
+# Encryption
+-> Ecryption option is available in S3 that is
+    S3-SSE  [SSE: Server Side Encryption]
+-> We have three types of encryption in S3
+   -> SSE-S3  [AWS will provide and generate the Encryption Key] [We doesnt have permission to manage the key because key provided by AWS]
+                  We cant delete and modify the encryption
+   -> SSE-KMS  [AWS will generate the encryption key but we have permission to manage the key]
+                 we can delete and modify the encryption
+   -> SSE-CMS[Customer managed key]  [Customer will generate the key] [customer having all permissions to delete and modify the key]
+
+Running Notes
+-> Encryption will happen after we upload the file in S3
+-> when we upload the file in S3. Encryption will happen before data store in data centers. After encryption data store in data centers.
+
+-> Customer Side Encryption
+   -> Customer will Encrypt the file before upload the file in S3 bucket
+ 
+
+
+# Access permissions
+-> We have three types of access permissions in s3
+   -> Bucket Policy
+   -> ACL
+   -> Presigned URL
+
+-> Bucket policy it work up to bucket level
+-> ALC it work up to bucket level and object level
+-> Presigned means it work file will access upto particular time
+
+
+
+
+-> Policy description
+
+assume_role_policy = jsonencode({
+    Version = "2012-10-17",     -> This version was defined at 2012
+    Statement = [
+      {
+        Effect = "Allow/deny",          -> if you want to allow the user or deny the users whoever you are providing access
+        Action = "s3:GetObject",       -> Actions means create, delete, data insert, data delete, encryption [If you want to download the file you will use GetObject action]
+        Principal = "arn:aws:iam::${data.aws_caller_identity.current.account_id}   -> To whom account or user would you giving access
+       Resource = manoj-3058/*     -> [If you want all the in that bucket manoj-3058/*] [If you want to see all the buckets "*"]
+      }                               [If you want to choose specific resource you have to that service arn]
+    ]
+  })
+
+
