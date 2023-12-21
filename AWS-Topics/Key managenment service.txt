@@ -93,3 +93,9 @@ running notes
 -> you will follow the video to edit the encryption data and extra data
 
 
+# What is alias
+-> In the context of AWS Key Management Service (KMS), an alias refers to an alternative
+   name for a KMS key. Instead of using the key's unique key ID, you can create an alias,
+   which is a human-readable name that you can use to refer to the key. Aliases provide a 
+   more user-friendly way to identify and work with KMS keys. 
+
