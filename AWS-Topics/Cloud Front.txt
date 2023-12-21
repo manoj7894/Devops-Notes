@@ -4,6 +4,25 @@ and high data transfer speeds.
 -> CDN will manages the both DNS query and Data copy
 DNS query means To find the nearst data centers and regions
 Data Copy means To copy the data in all data centers.
+
+# What is the difference between region and Edge locations
+-> Region
+   -> All aws services will avaliable in regions like s3,Ec2,VPC
+   -> In aws we have 30 regions and 96 availablity zones , Ecach availablity zones having 3 data centers
+-> Edge locations
+   -> Only cashing releated services will available in edge location
+   -> All aws services will not available in edge locations
+   -> We have 410 edge locations in our world
+   -> We have 6 edge locations in india that is Delhi, Mumbai, Benguluru, Hyderabad, chennai, kolkata
+   -> Each locations having 3 data centers
+   -> suppose when you raise the request from Delhi. It will come from Delhi edge location when we using cloud front
+
+# Running Notes
+-> It means our cloud front will work like above. we have to create distribution.
+-> When we create the distribution we have one input that input we call origin
+-> cloudfront will support those origins S3, EC2, ELB, Mediacore package service
+-> you can use cloudfront not only in AWS you can use outside of the AWS
+-> You need to provide IP and DNS to use outside servers in cloudfront
  
 # How to connect static templates website to cloudfront
 -> You will create one s3 bucket and upload one free html template
