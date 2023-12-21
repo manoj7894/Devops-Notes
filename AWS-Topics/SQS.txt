@@ -28,7 +28,7 @@
 
 # Key points
 -> You cant change the queue type after you create it and you cant convert an existing standard queue into FIFO queue
--> If you delete a queue, you must wair at least 60 seconds before creating a queue with same time
+-> If you delete a queue, you must wait at least 60 seconds before creating a queue with same time
 
 # What is Dead-letter [When message is not working then you will move message to dead-letter and segregate and reslove that problem]
 -> Dead-letter queue is a queue that other queue can leverage to isolate or segregate messages that cannot be processed sucessfully by consumer
