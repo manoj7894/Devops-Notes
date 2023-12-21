@@ -2,7 +2,9 @@
 1) docker images  --> To see the docker images
 2) docker pull imagename --> To pull the image from docker
 3) docker login  --> Docker hub login in our terminal
-4) docker tag imagename manoj3003/imagename  --> before push you have to tag our image
+4) docker tag imagename manoj3003/repositoryname  --> before push you have to tag our image
+   or if you no repository in dockerhub then you will use below command
+    docker tag imagename manoj3003/imagename
 5) docker push manoj3003/imagename   --> Push the image to dockerhub
 6) docker build -t imagename .  --> To build the image
 7) docker build -f dockerfilename -t imagename .  --> To build the image. file would be in other loaction[pending]
